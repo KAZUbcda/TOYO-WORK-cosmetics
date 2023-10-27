@@ -1,0 +1,63 @@
+#item-image {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.item-detail{
+  display: flex;
+  margin-top: 50px;
+}
+
+.goods-name{
+  font-size: 36px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.goods-price{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.point{
+  margin-left: 30px;
+}
+
+.item-combo,
+.customers-viewed-items,
+.relation-items,
+.important-notice{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+  /* border: 1px solid black; */
+}
+
+.combo-goods-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.combo-goods-name,
+.combo-goods-price{
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-weight: normal;
+  /* border: 1px solid black; */
+}
+
+.ingredients,
+.directions{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.ingredients-text,
+.directions-text{
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 20px;
+}
