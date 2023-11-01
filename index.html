@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="reset.css">
 </head>
 
-<body>
+<body onload="load();">
   <!-- ヘッダーここから -->
   <!-- テスト -->
   <div class="header">
@@ -26,10 +26,10 @@
       <input type="text" placeholder="検索 tw-cosmetics.co.jp">
       <input type="submit" value="&#128269;">
     </div>
-    <a href="#">
+    <a href="usernew.html">
       <div class="account">
         <div class="greeting">こんにちは</div>
-        <div class="account-list">アカウント&リスト</div>
+        <p id="set_name" class="account-list"></p>
       </div>
     </a>
     <a href="#">
@@ -162,3 +162,6 @@
   </div>
 </body>
 </html>
+
+<script src="user_form.js"></script>
+
