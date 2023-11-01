@@ -29,7 +29,7 @@
 function load() {
    let save_userdata = "";
     if(!localStorage.getItem("name")) {
-        save_userdata = "No data";
+        save_userdata = "アカウント＆リスト";
     } else {
 	   	save_userdata = localStorage.getItem("name");
     }
