@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>TOYO WORK cosmetics</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
@@ -58,5 +58,70 @@
       <div>新着商品</div>
     </a>
   </div>
+
+  <div class="main">
+    <div class="form_content">
+    <form method="post">
+        <div class="form">
+
+          <div class="form-item">
+            <div class="form-context">名前</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="text" maxlength="100" placeholder="（例）山田太郎" class="form-input-field" id="get_name">
+
+          <div class="form-item">
+            <div class="form-context">貴社名</div>
+            <div class="form-optional">任意</div>
+          </div>
+          <input type="text" maxlength="30" placeholder="（例）株式会社" class="form-input-field" id="get_company">
+
+          <div class="form-item">
+            <div class="form-context">メールアドレス</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="email" maxlength="254" placeholder="（例）aaaa@gmail.com" class="form-input-field" id="get_email">
+
+          <div class="form-item">
+            <div class="form-context">郵便番号</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="text" maxlength="8" placeholder="（例）000-0000" class="form-input-field" id="get_postcode">
+
+          <div class="form-item">
+            <div class="form-context">住所</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="text" maxlength="254" placeholder="（例）東京都新宿区西新宿2丁目8-1" class="form-input-field" id="get_address">
+
+          <div class="form-item">
+            <div class="form-context">電話番号</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="tel" maxlength="13" placeholder="（例）000-0000-0000" class="form-input-field" id="get_tel">
+
+          <div class="form-item">
+            <div class="form-context">件名</div>
+            <div class="form-need">必須</div>
+          </div>
+          <input type="text" maxlength="1000" class="form-input-field" id="get_subject">
+
+          <div class="form-item">
+            <div class="form-context">内容</div>
+            <div class="form-need">必須</div>
+          </div>
+          <textarea type="text" maxlength="1000" class="form-input-textarea" id="get_content"></textarea>
+  
+          <div class="form-item">
+            <button id="button" class="form-input-button" disabled>送信する</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
 </body>
 </html>
