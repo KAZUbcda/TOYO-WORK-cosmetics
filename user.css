@@ -72,3 +72,9 @@
 	background-color: #ffd700;
 }
 
+.form-input-button:hover{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	background-color: #dfb500;
+}
