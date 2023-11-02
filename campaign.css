@@ -34,6 +34,25 @@
 	background-color: #dfb500;
 }
 
+.campaign_sub{
+  text-align: center;
+}
+
+#campaign_log{
+  display: none;
+}
+
+.campaign_log{
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color:#4682b4;
+}
+
+#campaign_log:checked+label+.campaign_log_detail{
+  display: none;
+}
+
 
 
 
