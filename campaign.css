@@ -1,0 +1,58 @@
+.campaign_banner{
+  background-color: #ffb6c1;
+  height:130px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campaign_title{
+  font-size: 30px;
+}
+
+.campaign_entry{
+  border: 4px solid #ffb6c1;
+  width: 800px;
+  height: 250px;
+  text-align: center;
+  margin: 30px 0 30px 230px;
+}
+
+.campaign_comments{
+  font-size: 14px;
+}
+
+.input-button {
+  vertical-align: middle;
+  line-height: 45px;
+  height: 50px;
+  text-align: center;
+  margin: 50px;
+	background-color: #ffd700;
+}
+
+.input-button:hover{
+	background-color: #dfb500;
+}
+
+.campaign_sub{
+  text-align: center;
+}
+
+#campaign_log{
+  display: none;
+}
+
+.campaign_log{
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color:#4682b4;
+}
+
+#campaign_log:checked+label+.campaign_log_detail{
+  display: none;
+}
+
+
+
+
