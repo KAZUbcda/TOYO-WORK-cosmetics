@@ -1,4 +1,12 @@
-﻿document.getElementById("button").onclick = function() {
+﻿document.getElementById("button_cart").onclick = function() {
+  let get_product = document.getElementById("get_product").textContent;
+  let get_price = document.getElementById("get_price").textContent;
+
+	localStorage.setItem("product", get_product);
+	localStorage.setItem("price", get_price);
+};
+
+document.getElementById("button_purchase").onclick = function() {
   let get_product = document.getElementById("get_product").textContent;
   let get_price = document.getElementById("get_price").textContent;
 
