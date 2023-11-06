@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="cosme.css">
 </head>
 
-<body>
+<body onload="load();">
   <div class="header">
     <a href="index.html">
       <div class="title">TOYO WORK cosmetics</div>
@@ -28,7 +28,7 @@
     <a href="usernew.html">
       <div class="account">
         <div class="greeting">こんにちは</div>
-        <div class="account-list">アカウント&リスト</div>
+        <p id="set_name" class="account-list"></p>
       </div>
     </a>
     <a href="#">
@@ -206,4 +206,5 @@
   </div>
 </body>
 
+<script src="user_form.js"></script>
 <script src="purchase_form.js"></script>
