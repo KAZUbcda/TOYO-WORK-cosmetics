@@ -1,13 +1,23 @@
 .form_content {
-  width: 100vw;
+  width: 1260px;
   height: 1050px;
   display: flex;
   justify-content: center;
 }
 
+.consent {
+  width: 1260px;
+  text-align: center;
+}
+
 .form {
-  height: 1100px;
+  height: 1000px;
   width: 400px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .form-title{
