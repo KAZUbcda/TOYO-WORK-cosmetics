@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="purchase.css">
 </head>
 
-<body onload="load();">
+<body onload="load(); product_load();">
   <div class="header">
     <a href="index.html">
       <div class="title">TOYO WORK cosmetics</div>
@@ -60,7 +60,8 @@
     </a>
   </div>
 
-  <p class="form-title">〇〇　購入</p>
+  <p class="form-title" id="set_product"></p>
+  <div class="form-price" id="set_price">〇〇円</div>
 
   <div class="main">
     <div class="form_content">
@@ -134,3 +135,5 @@
 </html>
 
 <script src="user_form.js"></script>
+<script src="purchase_form.js"></script>
+
