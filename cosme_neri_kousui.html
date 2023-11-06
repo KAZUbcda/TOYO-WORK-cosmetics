@@ -7,9 +7,10 @@
   <title>TOYO WORK cosmetics</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="cosme.css">
 </head>
 
-<body>
+<body onload="load();">
   <div class="header">
     <a href="index.html">
       <div class="title">TOYO WORK cosmetics</div>
@@ -24,10 +25,10 @@
       <input type="text" placeholder="検索 tw-cosmetics.co.jp">
       <input type="submit" value="&#128269;">
     </div>
-    <a href="#">
+    <a href="usernew.html">
       <div class="account">
         <div class="greeting">こんにちは</div>
-        <div class="account-list">アカウント&リスト</div>
+        <p id="set_name" class="account-list"></p>
       </div>
     </a>
     <a href="#">
@@ -58,3 +59,152 @@
       <div>新着商品</div>
     </a>
   </div>
+  <div class="item-detail">
+    <div class="item-detail-left">
+      <img id="item-image" src="images/makeup_neri_kousui.png" alt="" >
+      <div>
+        <div class="goods-name" id="get_product">練り香水</div>
+        <div class="goods-price" id="get_price">価格:1500円 税込み</div>
+        <div class="point">15pt(1%) 詳細はこちら</div>
+        <div class="about_this_product">
+          <ul>
+            この商品について
+            <li>香水ほどキツイ香りではなく自然に香るのでシーンを問わず使えます。</li>
+            <li>性別や年代問わず使える、ほんのり甘いホワイトムスクの香り。</li>
+            <li>アルコールフリーで保湿成分も配合。</li>
+            <li>クリーム状の香水なので量の調節がしやすく、持ち運びもしやすい。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 商品ページの右側 -->
+    <div class="order-menu">
+      <div class="order-price">¥1500</div>
+      <div>ポイント:15pt <a href="#" class="click_here_for_details">詳細はこちら</a></div>
+      <div>無料配送 <a href="#" class="click_here_for_details">詳細はこちら</a></div>
+      <div class="stock">在庫あり。</div>
+      <a href="#" class="stock_status">在庫状況</a>について
+      <div class="add_to_cart" id="button_cart"><a href="purchase.html">カートに入れる</a></div>
+      <div class="buy_now" id="button_purchase"><a href="purchase.html">今すぐ買う</a></div>
+      <div>出荷元 東洋ワーク</div>
+      <div>販売元 <a href="#" class="seller_name">東洋ワーク</a></div>
+      <div>返品 <a href="#" class="click_here_for_details">2024年1月31日まで返品可能</a></div>
+      <div>支払い方法 <a href="#" class="click_here_for_details">お客様情報を保護しています</a></div>
+    </div>
+  </div>
+  <div class="item-combo">よく一緒に購入されている商品
+    <div class="combo-goods-list">
+      <div class="combo-goods">
+        <a href="cosme_pressed_powder.html">
+          <img src="images/makeup_pressed_powder.png" alt="" >
+          <div class="combo-goods-name">プレスドパウダー</div>
+          <div class="combo-goods-price">3500円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="cosme_hot_curler_byura.html">
+          <img src="images/biyou_hot_curler_byura.png" alt="" >
+          <div class="combo-goods-name">ホットビューラー</div>
+          <div class="combo-goods-price">1900円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/makeup_eyeshadow.png" alt="" >
+          <div class="combo-goods-name">アイシャドー</div>
+          <div class="combo-goods-price">1300円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/aroma_essential_oil.png" alt="" >
+          <div class="combo-goods-name">アロマエッセンシャルオイル</div>
+          <div class="combo-goods-price">1100円</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="customers-viewed-items">他のお客様がよく閲覧している商品
+    <div class="combo-goods-list">
+      <div class="combo-goods">
+        <a href="cosme_suppliment.html">
+          <img src="images/suppliment_pill_diet.png" alt="" >
+          <div class="combo-goods-name">ダイエットサプリ</div>
+          <div class="combo-goods-price">2000円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="cosme_neri_kousui.html">
+          <img src="images/makeup_neri_kousui.png" alt="" >
+          <div class="combo-goods-name">練り香水</div>
+          <div class="combo-goods-price">1500円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/biganki.png" alt="" >
+          <div class="combo-goods-name">美顔器</div>
+          <div class="combo-goods-price">9000円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/makeup_manicure.png" alt="" >
+          <div class="combo-goods-name">マニキュア</div>
+          <div class="combo-goods-price">1650円</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="relation-items">この商品に関連する商品
+    <div class="combo-goods-list">
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/makeup_eyeshadow.png" alt="" >
+          <div class="combo-goods-name">アイシャドー</div>
+          <div class="combo-goods-price">1300円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="cosme_hot_curler_byura.html">
+          <img src="images/biyou_hot_curler_byura.png" alt="" >
+          <div class="combo-goods-name">ホットビューラー</div>
+          <div class="combo-goods-price">1900円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="cosme_bigan_roller.html">
+          <img src="images/biyou_bigan_roller.png" alt="" >
+          <div class="combo-goods-name">美顔ローラー</div>
+          <div class="combo-goods-price">7000円</div>
+        </a>
+      </div>
+      <div class="combo-goods">
+        <a href="#">
+          <img src="images/seikanzai.png" alt="" >
+          <div class="combo-goods-name">制汗剤</div>
+          <div class="combo-goods-price">1980円</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="important-notice">重要なお知らせ
+    <div class="ingredients">原材料・成分
+      <div class="ingredients-text">
+        【全成分表示】ステアリン酸エチルヘキシル、トリイソステアリン酸ポリグリセリル－２、セレシン、
+        ジメチコン、テトラ（ヒドロキシステアリン酸／イソステアリン酸）ジペンタエリスリチル、
+        キャンデリラロウ、合成ワックス、シリカ、合成金雲母、セスキイソステアリン酸ソルビタン、
+        カルナウバロウ、水酸化Ａｌ、トコフェロール、酸化チタン、酸化鉄
+      </div>
+    </div>
+    <div class="directions">使用方法
+      <div class="directions-text">
+        2~3ｍｍくり出し、カバーしたい部分に直接つけてください。
+        さらにカバー効果を出したいときは、重ねづけしてください。
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="user_form.js"></script>
+<script src="purchase_form.js"></script>
