@@ -12,8 +12,18 @@
   width:200px;
 }
 
-.topic:hover{
-  border-bottom: 1px solid #000;
+.topic_lotion, .topic_powder, .topic_suppli{
+  margin-top: 20px;
+  margin-left: 30px;
+  background-color: #ffb6c1;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.topic_lotion:hover, .topic_powder:hover, .topic_suppli:hover{
+  border: 1px solid #ffb6c1;
 }
 
 #content2 {
