@@ -38,3 +38,13 @@
 .ranking_item{
   display: flex;
 }
+
+.item_image{
+  width: 260px;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* #rank_3rd{
+  background-color: aqua;
+} */
