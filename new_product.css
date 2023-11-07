@@ -37,6 +37,7 @@
   overflow-x: scroll;
   display: flex;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 .goods-index{
@@ -44,5 +45,17 @@
   background-color: #ffe3eb;
   text-align: center;
   width: 300px;
+}
+
+.new-title{
+  font-weight:bold;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.new-date{
+  font-weight:bold;
+  margin-left: 40px;
+  color:#dc143c;
 }
 
