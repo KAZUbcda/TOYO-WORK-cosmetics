@@ -78,11 +78,86 @@ a {
 
 .goods-list{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
+
 .goods{
   margin: 2%;
   /* background-color:  */
   /* border: 1px solid black; */
 }
+
+/**************************
+      画像縦170px固定
+**************************/
+.neri_png{
+  width: 169.42px;
+  height: 170px;
+}
+
+.diet_png{
+  width: 150.45px;
+  height: 170px;
+}
+
+.bigan_png{
+  width: 154.69px;
+  height: 170px;
+}
+
+.powder_png, .baby_png, .loose_png{
+  width: 170px;
+  height: 170px;
+}
+
+.concealer_png{
+  width: 170px;
+  height: 170px;
+}
+
+.byura_png{
+  width: 155.93px;
+  height: 170px;
+}
+
+.eye_png{
+  width: 176.48px;
+  height: 170px;
+}
+
+.oil_png{
+  width: 170px;
+  height: 170px;
+}
+
+.biganki_png{
+  width: 153.82px;
+  height: 170px;
+}
+
+.mani_png{
+  width: 175.48px;
+  height: 170px;
+}
+
+.seikan_png{
+  width: 136.63px;
+  height: 170px;
+}
+
+.sup_png{
+  width: 150.88px;
+  height: 170px;
+}
+
+.hyaluronic_png{
+  width: 127.93px;
+  height: 170px;
+}
+
+.collagen_png, .calcium_png, .placenta_png{
+  width: 112.88px;
+  height: 170px;
+}
+
