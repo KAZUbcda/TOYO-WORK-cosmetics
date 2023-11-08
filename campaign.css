@@ -14,7 +14,9 @@
   width: 800px;
   height: 250px;
   text-align: center;
-  margin: 30px 0 30px 230px;
+  margin:  0 auto;            /* 中央寄せ */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .campaign_comments{
