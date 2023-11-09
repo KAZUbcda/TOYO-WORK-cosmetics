@@ -1,0 +1,60 @@
+.question_attention{
+  width: 880px;
+  margin: 0 auto;
+}
+
+.question_attention_money, .question_attention_mail{
+  border: 2px solid #cd853f;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.question_info{
+  width: 880px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 30px;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.question_item{
+  border: 1px solid #e0e0e0;
+  background-color: #ddd;
+  width: 300px;
+  height: 90px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.question_item:hover{
+  color: #fff;
+  background-color: #aaa;
+}
+
+.question_title{
+  font-size: 22px;
+}
+
+.question{
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/**************************
+      画像縦82px固定
+**************************/
+.money_png{
+  background-color: #6eeec3;
+  border-radius: 20px;
+}
+
+.money_png{
+  width: 75.24px;
+  height: 82px;
+}
+
+
