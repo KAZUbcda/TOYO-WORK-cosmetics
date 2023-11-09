@@ -6,6 +6,7 @@
   height:1000px;
   width: 1000px;
   border-left: 1px solid #000;
+  padding-left: 50px;
 }
 
 .new_subcontent{
@@ -52,9 +53,14 @@
 
 .goods-index{
   border: 1px solid #ffb6c1;
-  background-color: #ffe3eb;
+  background-color: #f8f8ff;
   text-align: center;
   width: 300px;
+}
+
+.goods-index a img{
+  width: auto;
+  height: 300px;
 }
 
 .new-title{
