@@ -55,6 +55,10 @@
   display: none;
 }
 
+#content9 {
+  display: none;
+}
+
 .goods-name{
   font-size: 36px;
 }
