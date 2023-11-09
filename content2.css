@@ -24,6 +24,9 @@ margin: 0 30px;
 }
 
 /* 　　（フッター */
+.navLeftFooter nav-sprite-v1{
+  position: sticky;
+}
 #navFooter.navLeftFooter {
   margin-bottom: 0;
   padding: 15px 0 20px 0;
