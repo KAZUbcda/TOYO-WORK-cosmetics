@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="purchase.css">
 </head>
 
-<body>
+<body onload="load(); product_load();">
   <div class="header">
     <a href="index.html">
       <div class="title">TOYO WORK cosmetics</div>
@@ -28,7 +28,7 @@
     <a href="#">
       <div class="account">
         <div class="greeting">こんにちは</div>
-        <div class="account-list">アカウント&リスト</div>
+        <p id="set_name" class="account-list"></p>
       </div>
     </a>
     <a href="#">
@@ -60,78 +60,80 @@
     </a>
   </div>
 
-  <p class="form-title">購入</p>
+  <p class="form-title" id="set_product"></p>
+  <div class="form-price" id="set_price">〇〇円</div>
 
   <div class="main">
     <div class="form_content">
     <form method="post">
-        <div class="form">
+      <div class="form">
 
-          <div class="form-item">
-            <div class="form-context">カード番号</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="100" placeholder="（例）1234 5678 9012 3456" class="form-input-field" id="credit_id">
-
-          <div class="form-item">
-            <div class="form-context">有効期限</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="100" placeholder="（例）01/11" class="form-input-field" id="credit_limit">
-
-          <div class="form-item">
-            <div class="form-context">セキュリティコード</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="100" placeholder="（例）000" class="form-input-field" id="credit_code">
-
-          <div class="form-item">
-            <div class="form-context">名前</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="100" placeholder="（例）山田太郎" class="form-input-field" id="get_name">
-
-          <div class="form-item">
-            <div class="form-context">メールアドレス</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="email" maxlength="254" placeholder="（例）aaaa@gmail.com" class="form-input-field" id="get_email">
-
-          <div class="form-item">
-            <div class="form-context">郵便番号</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="8" placeholder="（例）000-0000" class="form-input-field" id="get_postcode">
-
-          <div class="form-item">
-            <div class="form-context">住所</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="text" maxlength="254" placeholder="（例）東京都新宿区西新宿2丁目8-1" class="form-input-field" id="get_address">
-
-          <div class="form-item">
-            <div class="form-context">電話番号</div>
-            <div class="form-need">必須</div>
-          </div>
-          <input type="tel" maxlength="13" placeholder="（例）000-0000-0000" class="form-input-field" id="get_tel">
-  
-          <div class="form-item">
-            <button id="button" class="form-input-button" disabled>購入する</button>
-          </div>
+        <div class="form-item">
+          <div class="form-context">カード番号</div>
+          <div class="form-need">必須</div>
         </div>
+        <input type="text" maxlength="100" placeholder="（例）1234 5678 9012 3456" class="form-input-field" id="credit_id">
 
-        <div class="consent">
-          <div>「個人情報の取扱いについて同意する」にチェックをして、送信してください。</div>
-          <input type="checkbox"/>
-          <label for="scales">個人情報の取扱いについて同意する</label>
-          </div>
-        </form>
+        <div class="form-item">
+          <div class="form-context">有効期限</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="text" maxlength="100" placeholder="（例）01/11" class="form-input-field" id="credit_limit">
+
+        <div class="form-item">
+          <div class="form-context">セキュリティコード</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="text" maxlength="100" placeholder="（例）000" class="form-input-field" id="credit_code">
+
+        <div class="form-item">
+          <div class="form-context">名前</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="text" maxlength="100" placeholder="（例）山田太郎" class="form-input-field" id="get_name">
+
+        <div class="form-item">
+          <div class="form-context">メールアドレス</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="email" maxlength="254" placeholder="（例）aaaa@gmail.com" class="form-input-field" id="get_email">
+
+        <div class="form-item">
+          <div class="form-context">郵便番号</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="text" maxlength="8" placeholder="（例）000-0000" class="form-input-field" id="get_postcode">
+
+        <div class="form-item">
+          <div class="form-context">住所</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="text" maxlength="254" placeholder="（例）東京都新宿区西新宿2丁目8-1" class="form-input-field" id="get_address">
+
+        <div class="form-item">
+          <div class="form-context">電話番号</div>
+          <div class="form-need">必須</div>
+        </div>
+        <input type="tel" maxlength="13" placeholder="（例）000-0000-0000" class="form-input-field" id="get_tel">
+
+        <div class="form-item">
+          <button id="button" class="form-input-button" disabled>購入する</button>
+        </div>
+      </div>
+
+      <div class="consent">
+        <div>「個人情報の取扱いについて同意する」にチェックをして、送信してください。</div>
+        <input type="checkbox"/>
+        <label for="scales">個人情報の取扱いについて同意する</label>
+        </div>
+      </form>
 
     </div>
   </div>
 
-
-
-
 </body>
 </html>
+
+<script src="user_form.js"></script>
+<script src="purchase_form.js"></script>
+
