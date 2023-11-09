@@ -9,52 +9,57 @@
   padding: 10px;
 }
 
-.question_info{
-  width: 880px;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: x-large;
-  padding: 30px;
-  border-bottom: 2px solid #c0c0c0;
+#content2 {
+  display: none;
 }
 
-.question_item{
-  border: 1px solid #e0e0e0;
-  background-color: #ddd;
-  width: 300px;
-  height: 90px;
+.question_content{
   display: flex;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
-.question_item:hover{
-  color: #fff;
-  background-color: #aaa;
+.topic_{
+  margin: 0 0 10px 10px;
+}
+
+.topic_:hover{
+  border-bottom: 1px solid #000;
+}
+
+.question_maincontent{
+  margin-left: 10px;
+  border-left: 1px solid #000;
+  width: 70vw;
 }
 
 .question_title{
-  font-size: 22px;
+  font-weight:bold;
+  font-size: 30px;
+  margin-left: 20px;
 }
 
-.question{
-  width: 880px;
-  margin: 0 auto;
+.question_answer{
+  font-size: 15px;
+  margin: 0 0 10px 25px;
+}
+
+.question_feedback{
+  border: 1px solid #555;
+  padding: 10px;
+  margin: 25px 0 30px 25px;
+  width: 300px;
+}
+
+.question_feedback_button{
   display: flex;
 }
 
-/**************************
-      画像縦82px固定
-**************************/
-.money_png{
-  background-color: #6eeec3;
-  border-radius: 20px;
+.question_feedback_button_yes, .question_feedback_button_no{
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 3px;
 }
 
-.money_png{
-  width: 75.24px;
-  height: 82px;
+.question_feedback_button_yes:hover, .question_feedback_button_no:hover{
+  background-color: #cdf8f6;
 }
-
-
