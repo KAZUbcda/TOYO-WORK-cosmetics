@@ -9,8 +9,13 @@
   padding: 10px;
 }
 
+.separator{
+  border-top: 1px solid #000;
+}
+
 .question_subcontent{
   width: 200px;
+  padding-top: 10px;
 }
 
 #content2 ,#content3, #content4, #content5, #content6, #content7, #content8, #content9, #content10{
@@ -33,6 +38,7 @@
   margin-left: 10px;
   border-left: 1px solid #000;
   width: 1000px;
+  padding-top: 10px;
 }
 
 .question_title{
