@@ -9,7 +9,7 @@
   padding: 10px;
 }
 
-#content2 {
+#content2 ,#content3, #content4, #content5, #content6, #content7, #content8, #content9, #content10, #content11, #content12, #content13{
   display: none;
 }
 
@@ -39,7 +39,7 @@
 
 .question_answer{
   font-size: 15px;
-  margin: 0 0 10px 25px;
+  margin: 0 0 10px 35px;
 }
 
 .question_feedback{
@@ -61,5 +61,5 @@
 }
 
 .question_feedback_button_yes:hover, .question_feedback_button_no:hover{
-  background-color: #cdf8f6;
+  background-color: #edf8f6;
 }
