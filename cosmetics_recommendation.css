@@ -29,4 +29,8 @@
 
 .item{
   margin: 12px;
+  background-color: rgb(255, 186, 223);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 1px;
 }
