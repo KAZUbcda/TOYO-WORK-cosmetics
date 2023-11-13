@@ -63,14 +63,14 @@
   display: flex;
 }
 
-.question_feedback_button_yes, .question_feedback_button_no{
+.question_feedback_button_yes, .question_feedback_button_no, .question_feedback_button_back, .question_feedback_button_send{
   border: 1px solid #333;
   border-radius: 10px;
   padding: 3px;
   margin: 3px;
 }
 
-.question_feedback_button_yes:hover, .question_feedback_button_no:hover{
+.question_feedback_button_yes:hover, .question_feedback_button_no:hover, .question_feedback_button_back:hover, .question_feedback_button_send:hover{
   background-color: #edf8f6;
 }
 

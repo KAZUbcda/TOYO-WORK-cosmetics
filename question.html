@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="content2.css">    
   </head>
 
-  <body onload="load();">
+  <body onload="load(); question_load();">
     <div class="header">
       <a href="index.html">
       <div class="title">TOYO WORK cosmetics</div>
@@ -102,10 +102,23 @@
           <div class="question_answer">ToYo Mastercardは、TOYO WORK cosmeticsアカウントをお持ちの方がお申し込みいただけるカードです。ToYo Mastercardにお申し込みいただくと、提携会社である四井住友カード株式会社が、カードの入会審査および発行を行います。</div>
 
           <div class="question_feedback">
-            <div>この情報は役に立ちましたか？</div>
+            <div id="feedback_text">この情報は役に立ちましたか？</div>
+            <div id="feedback_text_yes">ご意見をお寄せいただきありがとうございます。</div>
+            <div id="feedback_text_no">ご意見をお寄せいただきありがとうございます。サービス改善のため、以下から当てはまるものを選択してください</div>
+            <div id="feedback_text_answer">ご意見をお送りいただき、ありがとうございました。お客様のご意見をもとにサービス向上に努めさせていただきます。なお、お送りいただいたご意見への返答は行っておりませんので、ご了承ください。</div>
+            
+            <div class="question_radio" id="question_radio">
+              <br>
+              <input type="radio" name="question">このページの内容はわかりにくいです。または、このページの内容は間違っています。<br>
+              <input type="radio" name="question">探していた情報が載っていません。<br>
+              <input type="radio" name="question">このページの内容には納得がいきません。<br>
+            </div>
+
             <div class="question_feedback_button">
-              <div class="question_feedback_button_yes">はい</div>
-              <div class="question_feedback_button_no">いいえ</div>
+              <div class="question_feedback_button_yes" id="button_yes">はい</div>
+              <div class="question_feedback_button_no" id="button_no">いいえ</div>
+              <div class="question_feedback_button_send" id="button_send">おくる</div>
+              <div class="question_feedback_button_back" id="button_back">もどる</div>
             </div>
           </div>
         </div>
