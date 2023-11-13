@@ -1,0 +1,84 @@
+.cosmetics_ranking_contents{
+  display: flex;
+  margin-top: 30px;
+  /* margin: 30px 0 0 30px; */
+  background-color: rgb(254, 239, 254);
+}
+
+.cosmetics_ranking_content_left{
+  width: 12vw;
+  margin: 0 40px 0 40px;
+  border-right: 2px solid gray;
+  /* width: fit-content; */
+}
+
+.item_category{
+  font-size: 26px;
+}
+
+.category{
+  font-size: 18px;
+  margin-bottom: 14px;
+  background-color: rgb(255, 186, 223);
+  border-radius: 6px;
+  width: fit-content;
+  letter-spacing: 1px;
+}
+
+.cosmetics_ranking_content_right{
+  /* border: 1px solid black; */
+  /* width: fit-content; */
+  width: 85vw;
+  /* margin-left: 10px; */
+}
+
+.best_seller{
+  font-size: 24px;
+}
+
+.ranking_items{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  margin-right: 30px;
+  
+}
+
+.ranking_item{
+  display: flex;
+}
+
+.item_rank{
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+}
+
+#rank_1st{
+  background: radial-gradient(white,gold);
+  border-radius: 0 40px 40px 40px;
+}
+
+#rank_2nd{
+  background: radial-gradient(white,silver);
+}
+
+#rank_3rd{
+  background: radial-gradient(white,#CD7F32);
+}
+
+#rank_1st,
+#rank_2nd,
+#rank_3rd{
+  border-radius: 0 40px 40px 40px;
+}
+
+.item_image{
+  width: 260px;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* #rank_3rd{
+  background-color: aqua;
+} */

@@ -1,0 +1,77 @@
+.new_content{
+  display: flex;
+}
+
+.new_maincontent{
+  height:1000px;
+  width: 1000px;
+  border-left: 1px solid #000;
+  padding-left: 50px;
+}
+
+.new_subcontent{
+  width:200px;
+}
+
+.topic_lotion, .topic_powder, .topic_suppli{
+  margin-top: 20px;
+  margin-left: 30px;
+  background-color: #ffb6c1;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.topic_lotion:hover, .topic_powder:hover, .topic_suppli:hover{
+  border: 1px solid #ffb6c1;
+}
+
+#content2 {
+  display: none;
+}
+
+#content3 {
+  display: none;
+}
+
+.goods-name{
+  font-size: 36px;
+}
+
+.goods-price{
+  font-size: 20px;
+}
+
+.goods-main{
+  width: 1000px;
+  overflow-x: scroll;
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.goods-index{
+  border: 1px solid #ffb6c1;
+  background-color: #f8f8ff;
+  text-align: center;
+  width: 300px;
+}
+
+.goods-index a img{
+  width: auto;
+  height: 300px;
+}
+
+.new-title{
+  font-weight:bold;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.new-date{
+  font-weight:bold;
+  margin-left: 40px;
+  color:#dc143c;
+}
+

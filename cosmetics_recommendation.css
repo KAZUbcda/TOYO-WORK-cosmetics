@@ -1,0 +1,36 @@
+.cosmetics_recommendation-banner{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  background-color: rgb(254, 239, 254);
+  margin-top: 30px;
+  letter-spacing: 20px;
+}
+
+.cosmetics_recommendation-title{
+  font-size: 70px;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(249, 194, 255);
+}
+
+.cosmetics_recommendation_texts{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: rgb(254, 239, 254);
+}
+
+.explanation{
+  font-size: 24px;
+}
+
+.item{
+  margin: 12px;
+  background-color: rgb(255, 186, 223);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 1px;
+}

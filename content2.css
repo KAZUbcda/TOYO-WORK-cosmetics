@@ -1,0 +1,75 @@
+.slide-container {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slide-wrapper {
+display: flex;
+animation: loop-slide 210s infinite linear 1s both;
+}
+.slide{
+width: 300px;
+object-fit:cover;
+margin: 0 30px;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 　　（フッター */
+.navLeftFooter nav-sprite-v1{
+  position: sticky;
+}
+#navFooter.navLeftFooter {
+  margin-bottom: 0;
+  padding: 15px 0 20px 0;
+  background-color: rgb(255, 217, 222);
+  min-width: 1000px;
+  position: relative;
+}
+#navFooter .navAccessibility.navFooterVerticalColumn {
+  display: table;
+  margin: 0 auto;
+}
+#navFooter .navAccessibility.navFooterColSpacerInner, #navFooter .navAccessibility.navFooterLinkCol {
+  display: table-cell;
+  padding: 0 10px;
+}
+#navFooter .navAccessibility.navFooterLinkCol {
+  line-height: 120%;
+}
+#navFooter.navLeftFooter .navFooterColHead {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF;
+}
+.navFooterColHead {
+  font-family: inherit;
+  color: #333;
+  font-size: 16px;
+  margin: 6px 0 14px 0;
+  white-space: nowrap;
+}
+#navFooter.navLeftFooter .navFooterLinkCol ul li {
+  margin: 0 0 10px;
+}
+.navFooterLinkCol ul li {
+  list-style-type: none;
+  white-space: nowrap;
+  margin: 0 0 8px 0;
+}
+#navFooter.navLeftFooter a.nav_a:link, #navFooter.navLeftFooter a.nav_a:visited, #navFooter.navLeftFooter li.nav_a_carat span.nav_a_carat {
+  color: #666;
+}
+.navFooterVerticalColumn .navFooterColSpacerInner {
+  width: 25%;
+  padding: 0 15px;
+}
+/* フッター）　　 */

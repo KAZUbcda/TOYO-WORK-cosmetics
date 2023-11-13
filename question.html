@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TOYO WORK cosmetics</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cosme.css">
+    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="content2.css">    
+  </head>
+
+  <body onload="load();">
+    <div class="header">
+      <a href="index.html">
+      <div class="title">TOYO WORK cosmetics</div>
+      </a>
+      <a href="#">
+      <div class="addressee">
+        <div class="addressee-upper">お届け先</div>
+        <div class="addressee-lower">場所を更新する</div>
+      </div>
+      </a>
+      <div class="serch-form">
+      <input type="text" placeholder="検索 tw-cosmetics.co.jp">
+      <input type="submit" value="&#128269;">
+      </div>
+      <a href="usernew.html">
+      <div class="account">
+        <div class="greeting">こんにちは</div>
+        <p id="set_name" class="account-list"></p>
+      </div>
+      </a>
+      <a href="#">
+      <div class="product">
+        <div class="return">返品もこちら</div>
+        <div class="order-history">注文履歴</div>
+      </div>
+      </a>
+    </div>
+
+    <div class="header-lower">
+      <a href="#">
+        <div class="lower-content">&equiv;すべて</div>
+      </a>
+      <a href="#">
+        <div>cosmeticsポイント:残高を確認</div>
+      </a>
+      <a href="#">
+        <div>ヘルプ</div>
+      </a>
+      <a href="#">
+        <div>ランキング</div>
+      </a>
+      <a href="#">
+        <div>タイムセール</div>
+      </a>
+      <a href="#">
+        <div>新着商品</div>
+      </a>
+    </div>
+
+    <div class="question_attention">
+      <div class="question_attention_money">
+        現在、配送センターでの返品処理完了までにお時間を要しております。返金には、ヘルプページ記載の所要日数目安に加え、2日-3日程度かかります。
+      </div>
+      <div class="question_attention_mail">
+        TOYO WORK cosmeticsからではないと思われる連絡を受信した場合は、同じEメールをメッセージセンターでも受信しているかどうかをご確認ください。同じEメールを確認できない場合、絶対に添付ファイルやリンクを開かず、TOYO WORK cosmeticsへご報告ください。
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="question_content">
+      <div class="question_subcontent">
+        <div class="topic_"><a href="#" onclick="showContent('content1')">価格について</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content2')">注文履歴</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content3')">返品・交換</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content4')">お支払方法</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content5')">アカウント設定</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content6')">配送業者の連絡先</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content7')">出品者とのトラブル</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content8')">フィッシング</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content9')">注文のキャンセル</a></div>
+        <div class="topic_"><a href="#" onclick="showContent('content10')">新型コロナウイルス関連</a></div>
+      </div>
+
+      <div class="question_maincontent">
+        <div id="content1">
+          <div class="question_title">表示価格について</div>
+          <div class="question_answer">当サイトの商品・サービスについては、商品ページにおいて、「参考価格」「過去価格」またはその他の二重価格表示と割引の表示がされている場合があります。</div>
+
+          <div class="question_title">予約商品の価格保証</div>
+          <div class="question_answer">
+            予約商品の価格保証は、TOYO WORK cosmeticsが販売、発送する商品（パソコン・周辺機器を除く）に適用され、ToYoマーケットプレイスの出品者が販売する商品や価格には適用されません。<br>
+            当サイトの価格は、常に変動しています。そのため、ご注文を確定された時の価格と、詳細ページの価格が一致しなくなる場合があります。
+          </div>
+
+          <div class="question_title">ToYo Mastercardのお申し込み</div>
+          <div class="question_answer">ToYo Mastercardは、TOYO WORK cosmeticsアカウントをお持ちの方がお申し込みいただけるカードです。ToYo Mastercardにお申し込みいただくと、提携会社である四井住友カード株式会社が、カードの入会審査および発行を行います。</div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content2">
+          <div class="question_title">お届け予定日を確認する</div>
+          <div class="question_answer">お届け予定日の目安は、商品詳細ページで確認できます。</div>
+
+          <div class="question_title">配送状況を確認できない</div>
+          <div class="question_answer">配送状況は、以下のような理由で確認できない場合があります。<br>
+
+            ・配送状況データベースの更新に遅れが生じている場合があるため。<br>
+            ・配送業者の荷物追跡システムの中には、TOYO WORK cosmeticsの追跡システムと完全統合できていないシステムがあるため。<br>
+            ・ToYoマーケットプレイス出品者が配送状況に関する情報を提供していないため。<br><br>
+            
+            ご注文品のお届け予定日を過ぎても配送状況に変化がない場合、お手数ですが、商品の配達まであと1～2日お待ちください。通常、商品はお届け予定日またはその直後に到着します。</div>
+
+          <div class="question_title">配達不可パッケージ</div>
+          <div class="question_answer">まれに、商品が配達不可としてToYoに返送されることがあります。ご注文の商品が配達不可となった場合、返金対応をいたします</div>
+
+          <div class="question_title">配達不可となる、よくある原因について</div>
+          <div class="question_answer">
+            ・お届け先の住所が間違っている、あるいは古くなっている場合。<br>
+            ・配送業者が何度か配達を試みたものの、ご不在などで、お届けできなかった場合。<br>
+            ・ギフト注文の場合で、ギフトの受け取り主が心当たりのない荷物として受け取り拒否された場合。<br>
+            ・配達用伝票が読み取れなくなり、配送業者が配達できなくなった場合。
+          </div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content3">
+          <div class="question_title">返品・交換の手続きをする</div>
+          <div class="question_answer">TOYO WORK cosmeticsで販売されている 多くの商品は、返品することができます。返送方法は出品者や商品、返品・交換の理由によって異なります。</div>
+
+          <div class="question_title">返品・交換の条件</div>
+          <div class="question_answer">
+            返品・交換のお手続きは注文履歴から簡単にお手続きいただけます。<br>
+            注文履歴からのお手続きを行う場合は、商品到着後30日以内に商品の発送を完了してください。<br>
+            商品に当初から不具合があることが上記期間後に判明した場合など、上記期間内にお手続きを完了できなかった場合は、製造元または保証書等に記載の保証元にまずはご連絡いただき、製造元または保証元からのコメントと担当者の氏名をあわせてご連絡ください。<br>
+            また、出品者が販売する商品については、交換を承っておりませんので、出品者に直接お問合せ下さい。</div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content4">
+          <div class="question_title">利用可能なお支払い方法</div>
+          <div class="question_answer">
+            以下のお支払い方法をご利用いただけます。<br>
+            ・Visa<br>
+            ・Mastercard<br>
+            ・American Express<br>
+            ・Diner's Club<br>
+            ・JCB<br>
+            ・銀聯（クレジットカードのみ利用可）<br>
+            ・ToYoギフトカード<br><br>
+            注:<br>
+            ・利用可能なクレジットカードまたはデビットカードのいずれかとToYoギフトカードの併用払いは可能ですが、複数のカードの併用払いはできません。<br>
+            ・Amazonプライム会費やデジタル商品のご注文には銀聯カードをご利用いただけません。<br>
+            ・J-Debitはご利用いただけません。<br>
+            ・JCBカードまたはAmerican Expressカードをご利用の場合、システムの都合により、請求日が実際の購入日の前日となる場合があります。<br>
+            ・クレジットカードの利用限度額やデビットカード利用規約については、カード発行会社とのご契約内容をご確認ください。<br>
+          </div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content5">
+          <div class="question_title">アカウント設定の変更</div>
+          <div class="question_answer"><a href="usernew.html" class="pagemove">このページ</a>より、名前、Eメールアドレス、パスワードを更新できます。</div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+
+        <div id="content6">
+          <div class="question_title">配送状況を確認できない</div>
+          <div class="question_answer">場合によっては、配送状況をご確認いただけないことがあります。配送状況は通常、「注文履歴」の該当注文の横に表示されている「配送状況を確認」でご確認いただけます。ただし、場合によっては、配送状況をご確認いただけないことがあります。</div>
+
+          <div class="question_title">配送業者の連絡先情報</div>
+          <div class="question_answer">再配達依頼（自動音声受付）： 0150-600-2**（固定電話/携帯電話からのお問い合わせ – フリーダイヤル）</div>
+
+          <div class="question_title">「配達が完了しました」となっているが、届かない商品を見つける</div>
+          <div class="question_answer">
+            ほとんどの商品は時間どおりに到着しますが、配送状況で「配達済み」と表示されているにもかかわらず、商品が届いていない場合があります。<br>
+            ご注文の商品の配送状況が「配達済み」となっているのにまだ受け取っていない場合は、配送業者に直接お問い合わせください。
+          </div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+
+        <div id="content7">
+          <div class="question_title">出品者とのトラブル</div>
+          <div class="question_answer">
+            TOYO WORK cosmeticsでは取引がすべて円滑に行われることを望んでおりますが、まれに出品者と購入者との間にトラブルが生じることもあります。<br>
+            売買の合意は出品者と購入者の間で成立していますので、当サイトは取引の問題についての話し合いに関わることはいたしません。</div>
+
+          <div class="question_title">出品者が配送や対応をしない場合の報告</div>
+          <div class="question_answer">
+            何週間も前に出品者への支払いを済ませたにもかかわらず商品を受け取れない場合、購入者は出品者に権利を行使できます。<br>
+            出品者は、配送商品の紛失、破損など、事故が発生した場合に、購入者と連絡をとる義務があります。<br>
+            出品者が配送も返金もしなかった場合、購入者に保証が適用されることがあります。
+          </div>
+
+          <div class="question_title">詐欺行為の報告</div>
+          <div class="question_answer">
+            マーケットプレイスでは、安全で保護された取引が行えることを第一に考えています。<br>
+            保証が適用されない場合、問題が解決するまで取引相手に引き続き連絡をとってください。<br>
+            また、出品者を評価してサイト上で公表してください。法人や組織、団体に報告することも可能です。
+          </div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+
+        <div id="content8">
+          <div class="question_title">ToYo からのEメール、電話、テキストメッセージ、またはウェブページかどうかを見分ける</div>
+          <div class="question_answer">
+            Amazon.co.jpでは、お客様の個人情報をEメールで送っていただくようお願いすることは決してありません。<br>
+            不審な通話やSMSを受信した場合は、メッセージ内のリンクや添付ファイルは開かないでください。<br>
+            もし開いてしまった場合は、リンクや添付ファイルを閉じ、各携帯電話会社がフィッシング対策として提供している迷惑メール対策機能を速やかに設定してください。
+          </div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+
+        <div id="content9">
+          <div class="question_title">注文のキャンセル</div>
+          <div class="question_answer">キャンセルできる注文は、出荷準備開始前のものに限ります。</div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+
+        <div id="content10">
+          <div class="question_title">新型コロナウイルス感染症と注文・配送に関するよくある質問</div>
+          <div class="question_answer">新型コロナウイルス感染症の影響下においても、Amazonで継続してお買い物いただけます。なお、お届けにかかる時間が通常より長くなる場合があります。</div>
+
+          <div class="question_title">コロナ下の注文において知っておくべきことはありますか。</div>
+          <div class="question_answer">
+            最新のお届け予定日時は、各商品詳細ページ、および注文画面にて確認できます。<br>
+            お届け先の住所には、閉鎖や休業の可能性がある施設（学校など）の住所を使用しないようご注意ください。<br>
+            ご注文の状況を確認するには、注文履歴をご覧ください。
+          </div>
+
+          <div class="question_title">注文の受け取りや返品は安全にできますか。</div>
+          <div class="question_answer">
+            ToYoはお客様やスタッフの安全を確保するため、対策を行っています。<br>
+            新型コロナウイルスに関するガイダンスは、世界保健機関（WHO）のウェブサイト（英語）や厚生労働省のウェブサイト（日本語）をご覧ください。</div>
+
+          <div class="question_feedback">
+            <div>この情報は役に立ちましたか？</div>
+            <div class="question_feedback_button">
+              <div class="question_feedback_button_yes">はい</div>
+              <div class="question_feedback_button_no">いいえ</div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <div class="navLeftFooter nav-sprite-v1" id="navFooter">
+    
+      <div class="navFooterVerticalColumn navAccessibility" role="presentation">
+      <div class="navFooterVerticalRow navAccessibility" style="display: table-row;">
+        <div class="navFooterLinkCol navAccessibility">
+          <div class="navFooterColHead">このサイトについて</div>
+          <ul>
+            <li class="nav_first">
+              <a href="#" class="nav_a">会社概要</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navFooterColSpacerInner navAccessibility"></div>
+          <div class="navFooterLinkCol navAccessibility">
+            <div class="navFooterColHead">おすすめコンテンツ</div>
+            <ul>
+              <li class="nav_first">
+                <a href="new_product.html" class="nav_a">新着コスメ</a>
+              </li>
+              <li>
+                <a href="ranking_lotion.html" class="nav_a">人気のコスメ</a>
+              </li>
+              <li>
+                <a href="campaign.html" class="nav_a">キャンペーン情報</a>
+              </li>
+              <li>
+                <a href="cosmetics_recommendation.html" class="nav_a">コスメのススメ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navFooterColSpacerInner navAccessibility"></div>
+          <div class="navFooterLinkCol navAccessibility">
+            <div class="navFooterColHead">よくある質問</div>
+          <ul>
+            <li class="nav_first">
+                <a href="#" class="nav_a">お支払方法について</a>
+            </li>
+            <li>
+              <a href="#" class="nav_a">送料について</a>
+            </li>
+            <li>
+              <a href="#" class="nav_a">発送日の目安</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav-footer-line"></div>
+    
+  </div>
+  <!-- フッター終了 -->
+
+  </body>
+</html>
+
+<script src="question.js"></script>
+<script src="user_form.js"></script>

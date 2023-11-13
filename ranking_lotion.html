@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TOYO WORK cosmetics</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="cosmetics_ranking.css">
+  <link rel="stylesheet" type="text/css" href="content1.css">
+  <link rel="stylesheet" type="text/css" href="content2.css">
+</head>
+
+<body onload="load();">
+  <!-- ヘッダーここから -->
+  <!-- テスト -->
+  <div class="header">
+    <a href="index.html">
+      <div class="title">TOYO WORK cosmetics</div>
+    </a>
+    <a href="#">
+      <div class="addressee">
+        <div class="addressee-upper">お届け先</div>
+        <div class="addressee-lower">場所を更新する</div>
+      </div>
+    </a>
+    <div class="serch-form">
+      <input type="text" placeholder="検索 tw-cosmetics.co.jp">
+      <input type="submit" value="&#128269;">
+    </div>
+    <a href="usernew.html">
+      <div class="account">
+        <div class="greeting">こんにちは</div>
+        <p id="set_name" class="account-list"></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="product">
+        <div class="return">返品もこちら</div>
+        <div class="order-history">注文履歴</div>
+      </div>
+    </a>
+  </div>
+  <!-- ヘッダー下部ここから -->
+  <div class="header-lower">
+    <a href="#">
+      <div class="lower-content">&equiv;すべて</div>
+    </a>
+    <a href="#">
+      <div>cosmeticsポイント:残高を確認</div>
+    </a>
+    <a href="question.html">
+      <div>ヘルプ</div>
+    </a>
+    <a href="ranking_lotion.html">
+      <div>ランキング</div>
+    </a>
+    <a href="#">
+      <div>タイムセール</div>
+    </a>
+    <a href="new_product.html">
+      <div>新着商品</div>
+    </a>
+  </div>
+  <!-- ヘッダーここまで -->
+  <div class="cosmetics_ranking_contents">
+    <div class="cosmetics_ranking_content_left">
+      <div class="item_category">カテゴリー</div>
+      <div class="category"><a href="ranking_lotion.html">化粧水</a></div>
+      <div class="category"><a href="ranking_emulsion.html">乳液</a></div>
+      <div class="category"><a href="ranking_foundation.html">ファンデーション</a></div>
+      <div class="category"><a href="ranking_concealer.html">コンシーラー</a></div>
+      <div class="category"><a href="ranking_powder.html">パウダー</a></div>
+      <div class="category"><a href="ranking_eye_shadow.html">アイシャドウ</a></div>
+      <div class="category"><a href="ranking_gross.html">リップグロス</a></div>
+      <div class="category"><a href="ranking_supplement.html">サプリメント</a></div>
+    </div>
+    <div class="cosmetics_ranking_content_right">
+      <div class="best_seller">売れ筋ランキング</div>
+      <div class="category_best_seller">化粧水の売れ筋ランキング</div>
+      <div class="ranking_items">
+        <a href="#">
+          <div class="ranking_item" id="rank_1st">
+            <div>
+              <div class="item_rank">第1位</div>
+              <div class="item_name">化粧水A</div>
+              <div class="item_price">￥1500</div>
+              <div>15ポイント(1%)</div>
+            </div>
+            <div>
+              <img class="item_image" src="images/biyou_kesyousui_bottle.png" alt="">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="ranking_item" id="rank_2nd">
+            <div>
+              <div class="item_rank">第2位</div>
+              <div class="item_name">化粧水B</div>
+              <div class="item_price">￥5000</div>
+              <div>50ポイント(1%)</div>
+            </div>
+            <div>
+              <img class="item_image" src="images/biyou_kesyousui_bottle.png" alt="">
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="ranking_item" id="rank_3rd">
+            <div>
+              <div class="item_rank">第3位</div>
+              <div class="item_name">化粧水C</div>
+              <div class="item_price">￥2000</div>
+              <div>20ポイント(1%)</div>
+            </div>
+            <div>
+              <img class="item_image" src="images/biyou_kesyousui_bottle.png" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- フッター -->
+  <div class="navLeftFooter nav-sprite-v1" id="navFooter">
+    
+    <div class="navFooterVerticalColumn navAccessibility" role="presentation">
+    <div class="navFooterVerticalRow navAccessibility" style="display: table-row;">
+          <div class="navFooterLinkCol navAccessibility">
+            <div class="navFooterColHead">このサイトについて</div>
+          <ul>
+              <li class="nav_first">
+                <a href="company_overview.html" class="nav_a">会社概要</a>
+              </li>
+          </ul>
+          </div>
+          <div class="navFooterColSpacerInner navAccessibility"></div>
+          <div class="navFooterLinkCol navAccessibility">
+            <div class="navFooterColHead">おすすめコンテンツ</div>
+          <ul>
+              <li class="nav_first">
+                <a href="new_product.html" class="nav_a">新着コスメ</a>
+              </li>
+              <li>
+                <a href="ranking_lotion.html" class="nav_a">人気のコスメ</a>
+              </li>
+              <li>
+                <a href="campaign.html" class="nav_a">キャンペーン情報</a>
+              </li>
+              <li>
+                <a href="cosmetics_recommendation.html" class="nav_a">コスメのススメ</a>
+              </li>
+          </ul>
+          </div>
+          <div class="navFooterColSpacerInner navAccessibility"></div>
+          <div class="navFooterLinkCol navAccessibility">
+            <div class="navFooterColHead">よくある質問</div>
+          <ul>
+              <li class="nav_first">
+                <a href="#" class="nav_a">お支払方法について</a>
+              </li>
+              <li>
+                <a href="#" class="nav_a">送料について</a>
+              </li>
+              <li>
+                <a href="#" class="nav_a">発送日の目安</a>
+              </li>
+          </ul>
+          </div>
+    </div>
+  </div>
+  <div class="nav-footer-line"></div>
+  
+</div>
+<!-- フッター終了 -->
+</body>
+</html>
+
+<script src="user_form.js"></script>
