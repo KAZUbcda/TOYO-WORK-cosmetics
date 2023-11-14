@@ -35,6 +35,7 @@
 }
 
 .question_maincontent{
+  padding-bottom: 10px;
   margin-left: 10px;
   border-left: 1px solid #000;
   width: 1000px;
@@ -52,6 +53,12 @@
   margin: 0 0 10px 35px;
 }
 
+.question_outside{
+  padding: 10px 0;
+  margin-left: 10px;
+  border-left: 1px solid #000;
+}
+
 .question_feedback{
   border: 1px solid #555;
   padding: 10px;
@@ -63,14 +70,14 @@
   display: flex;
 }
 
-.question_feedback_button_yes, .question_feedback_button_no{
+.question_feedback_button_yes, .question_feedback_button_no, .question_feedback_button_back, .question_feedback_button_send{
   border: 1px solid #333;
   border-radius: 10px;
   padding: 3px;
   margin: 3px;
 }
 
-.question_feedback_button_yes:hover, .question_feedback_button_no:hover{
+.question_feedback_button_yes:hover, .question_feedback_button_no:hover, .question_feedback_button_back:hover, .question_feedback_button_send:hover{
   background-color: #edf8f6;
 }
 
