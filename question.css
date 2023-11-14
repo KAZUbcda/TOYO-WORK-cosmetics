@@ -52,6 +52,11 @@
   margin: 0 0 10px 35px;
 }
 
+.question_outside{
+  margin-left: 10px;
+  border-left: 1px solid #000;
+}
+
 .question_feedback{
   border: 1px solid #555;
   padding: 10px;
