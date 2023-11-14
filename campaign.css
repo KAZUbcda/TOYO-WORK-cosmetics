@@ -2,22 +2,27 @@
   background-color: #ffb6c1;
   height:130px;
   text-align: center;
-  padding-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .campaign_title{
+  padding-top: 30px;
   font-size: 30px;
 }
 
+.campaign_period{
+  padding-bottom: 20px;
+}
+
 .pointcard_png{
-  padding: 0 40px;
+  width: auto;
+  height: auto;
 }
 
 .pointhuman_png{
-  padding: 0 40px;
-  width: 130px;
+  width: auto;
+  height: auto;
 }
 
 .campaign_entry{
@@ -66,6 +71,24 @@
   display: none;
 }
 
+.combo-title{
+  margin-left: 35px;
+}
 
+ul{
+  text-indent: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+.low-content{
+  border: none;
+  background: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 
