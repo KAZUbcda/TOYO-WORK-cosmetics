@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>TOYO WORK cosmetics</title>
+  <link rel="stylesheet" type="text/css" href="component.css" />
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="cosme.css">
-  <link rel="stylesheet" href="content2.css">
+  <link rel="stylesheet" type="text/css" href="content1.css">
+  <link rel="stylesheet" type="text/css" href="content2.css">
+  <script src="modernizr.custom.js"></script>
 </head>
 
 <body onload="load();">
@@ -25,8 +28,8 @@
       </div>
     </a>
     <div class="serch-form">
-      <input type="text" placeholder="検索 tw-cosmetics.co.jp">
-      <input type="submit" value="&#128269;">
+      <input class="btn1" type="text" placeholder="検索 tw-cosmetics.co.jp">
+      <input class="btn2" type="submit" value="&#128269;">
     </div>
     <a href="usernew.html">
       <div class="account">
@@ -41,27 +44,56 @@
       </div>
     </a>
   </div>
-  <!-- ヘッダー上部ここから -->
+  <!-- ヘッダー上部ここまで -->
   <!-- ヘッダー下部ここから -->
   <div class="header-lower">
-    <a href="#">
-      <div class="lower-content">&equiv;すべて</div>
-    </a>
-    <a href="#">
-      <div>cosmeticsポイント:残高を確認</div>
-    </a>
-    <a href="question.html">
-      <div>ヘルプ</div>
-    </a>
-    <a href="ranking_lotion.html">
-      <div>ランキング</div>
-    </a>
-    <a href="#">
-      <div>タイムセール</div>
-    </a>
-    <a href="new_product.html">
-      <div>新着商品</div>
-    </a>
+    <div id="st-container" class="st-container">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<!-- 	
+				example menus 
+				these menus will be under the push wrapper
+			-->
+			<nav class="st-menu st-effect-7" id="menu-7">
+				<p class="icon icon-lab">何をお探しですか？</p>
+				<ul>
+					<li><a class="icon icon-data" href="company_overview.html">会社概要</a></li>
+					<li><a class="icon icon-location" href="new_product.html">新着コスメ</a></li>
+					<li><a class="icon icon-study" href="ranking_lotion.html">人気のコスメ</a></li>
+					<li><a class="icon icon-photo" href="campaign.html">キャンペーン情報</a></li>
+					<li><a class="icon icon-wallet" href="cosmetics_recommendation.html">コスメのススメ</a></li>
+          <li><a class="icon icon-wallet" href="question.html">よくある質問</a></li>
+				</ul>
+			</nav>
+
+    <div class="st-content"><!-- this is the wrapper for the content -->
+		<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+		<!-- Top Navigation -->
+		<div class="codrops-top clearfix">
+							
+		<div class="main clearfix">
+			<div id="st-trigger-effects" class="column">
+				<!-- <button data-effect="st-effect-1">Slide in on top</button> -->
+          <!-- <div class="lower-content">&equiv;すべて</div> -->
+					<button class="low-content" data-effect="st-effect-7">&equiv;すべて</button>
+
+      <a href="#">
+        <div>cosmeticsポイント:残高を確認</div>
+      </a>
+      <a href="question.html">
+        <div>ヘルプ</div>
+      </a>
+      <a href="ranking_lotion.html">
+        <div>ランキング</div>
+      </a>
+      <a href="campaign.html">
+        <div>タイムセール</div>
+      </a>
+      <a href="new_product.html">
+        <div>新着商品</div>
+      </a>
+
+      </div>
   </div>
   <!-- ヘッダー下部ここまで -->
   <!-- ヘッダーここまで -->
@@ -266,7 +298,18 @@
   
 </div>
 <!-- フッター終了 -->
-</body>
-</html>
+</div><!-- /main -->
+</div><!-- /st-content-inner -->
+</div><!-- /st-content -->
+</div><!-- /st-pusher -->
+</div><!-- /st-container -->
+<script src="classie.js"></script>
+<script src="sidebarEffects.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="slide.js"></script>
 <script src="user_form.js"></script>
 <script src="purchase_form.js"></script>
+</body>
+</html>
