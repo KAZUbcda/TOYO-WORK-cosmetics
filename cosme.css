@@ -10,13 +10,13 @@
   margin-top: 50px;
 }
 
-ul{
+.about_this_product ul{
   /* margin-left: 20px; */
   text-indent: -2em;
   padding-left: 2em;
 }
 
-li{
+.about_this_product li{
   list-style-type: disc;
   list-style-position: inside;
   /* padding-left: 1em */
