@@ -3,10 +3,21 @@
   height:130px;
   text-align: center;
   padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .campaign_title{
   font-size: 30px;
+}
+
+.pointcard_png{
+  padding: 0 40px;
+}
+
+.pointhuman_png{
+  padding: 0 40px;
+  width: 130px;
 }
 
 .campaign_entry{
