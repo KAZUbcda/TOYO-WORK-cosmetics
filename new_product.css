@@ -1,16 +1,17 @@
 .new_content{
   display: flex;
+  height: 800px;
 }
 
 .new_maincontent{
-  height:1000px;
   width: 1000px;
-  border-left: 1px solid #000;
-  padding-left: 50px;
+  margin: 0 auto;
 }
 
 .new_subcontent{
-  width:200px;
+  border-right: 1px solid #000;
+  width:230px;
+  padding-right: 50px;
 }
 
 .topic{
@@ -99,3 +100,10 @@
   color:#dc143c;
 }
 
+.low-content{
+  border: none;
+  background: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}

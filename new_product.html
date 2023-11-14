@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>TOYO WORK cosmetics</title>
+  <link rel="stylesheet" type="text/css" href="component.css">
   <link rel="stylesheet" type="text/css" href="content2.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="new_product.css">
   <link rel="stylesheet" href="reset.css">
+  <script src="modernizr.custom.js"></script>
 </head>
 
 <body onload="load();">
@@ -42,31 +44,60 @@
     </a>
   </div>
   <!-- ヘッダー下部ここから -->
-  <div class="header-lower">
-    <a href="#">
-      <div class="lower-content">&equiv;すべて</div>
-    </a>
-    <a href="#">
-      <div>cosmeticsポイント:残高を確認</div>
-    </a>
-    <a href="#">
-      <div>ヘルプ</div>
-    </a>
-    <a href="#">
-      <div>ランキング</div>
-    </a>
-    <a href="#">
-      <div>タイムセール</div>
-    </a>
-    <a href="#">
-      <div>新着商品</div>
-    </a>
+  <div>
+    <div id="st-container" class="st-container">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<!-- 	
+				example menus 
+				these menus will be under the push wrapper
+			-->
+			<nav class="st-menu st-effect-7" id="menu-7">
+				<p class="icon icon-lab">何をお探しですか？</p>
+				<ul>
+					<li><a class="icon icon-data" href="company_overview.html">会社概要</a></li>
+					<li><a class="icon icon-location" href="new_product.html">新着コスメ</a></li>
+					<li><a class="icon icon-study" href="ranking_lotion.html">人気のコスメ</a></li>
+					<li><a class="icon icon-photo" href="campaign.html">キャンペーン情報</a></li>
+					<li><a class="icon icon-wallet" href="cosmetics_recommendation.html">コスメのススメ</a></li>
+          <li><a class="icon icon-wallet" href="question.html">よくある質問</a></li>
+				</ul>
+			</nav>
+
+    <div class="st-content"><!-- this is the wrapper for the content -->
+		<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+		<!-- Top Navigation -->
+		<div class="codrops-top clearfix">
+							
+		<div class="main clearfix">
+			<div id="st-trigger-effects" class="column">
+				<!-- <button data-effect="st-effect-1">Slide in on top</button> -->
+          <!-- <div class="lower-content">&equiv;すべて</div> -->
+					<button class="low-content" data-effect="st-effect-7">&equiv;すべて</button>
+
+      <a href="#">
+        <div>cosmeticsポイント:残高を確認</div>
+      </a>
+      <a href="question.html">
+        <div>ヘルプ</div>
+      </a>
+      <a href="ranking_lotion.html">
+        <div>ランキング</div>
+      </a>
+      <a href="campaign.html">
+        <div>タイムセール</div>
+      </a>
+      <a href="new_product.html">
+        <div>新着商品</div>
+      </a>
+
+      </div>
   </div>
   <!-- ヘッダーここまで -->
 
   <div class="new_content">
     <div class="new_subcontent">
-      <div class="topic"><a href="#" onclick="showContent('content1')">化粧水</a></div>
+      <div class="topic"><a href="" onclick="showContent('content1')">化粧水</a></div>
       <div class="topic"><a href="#" onclick="showContent('content2')">乳液</a></div>
       <div class="topic"><a href="#" onclick="showContent('content3')">ファンデーション</a></div>
       <div class="topic"><a href="#" onclick="showContent('content4')">コンシーラー</a></div>
@@ -84,28 +115,28 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_lotion.html">
               <img src="images/biyou_kesyousui_bottle.png">
               <div class="goods-name">　　化粧水A　　</div>
               <div class="goods-price">1500円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_lotion.html">
               <img src="images/biyou_kesyousui_bottle.png">
               <div class="goods-name">　　化粧水B　　</div>
               <div class="goods-price">5000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_lotion.html">
               <img src="images/biyou_kesyousui_bottle.png">
               <div class="goods-name">　　化粧水C　　</div>
               <div class="goods-price">999円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_lotion.html">
               <img src="images/biyou_kesyousui_bottle.png">
               <div class="goods-name">　　化粧水D　　</div>
               <div class="goods-price">1900円</div>
@@ -120,28 +151,28 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_emulsion.html">
               <img src="images/biyou_nyuueki.png">
               <div class="goods-name">　　乳液A　　</div>
               <div class="goods-price">1500円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_emulsion.html">
               <img src="images/biyou_nyuueki.png">
               <div class="goods-name">　　乳液B　　</div>
               <div class="goods-price">5000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_emulsion.html">
               <img src="images/biyou_nyuueki.png">
               <div class="goods-name">　　乳液C　　</div>
               <div class="goods-price">999円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_emulsion.html">
               <img src="images/biyou_nyuueki.png">
               <div class="goods-name">　　乳液D　　</div>
               <div class="goods-price">1900円</div>
@@ -156,28 +187,28 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_foundation.html">
               <img src="images/makeup_foundation.png">
               <div class="goods-name">ファンデーション<br>　　A　　</div>
               <div class="goods-price">1500円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_foundation.html">
               <img src="images/makeup_foundation.png">
               <div class="goods-name">ファンデーション<br>　　B　　</div>
               <div class="goods-price">5000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_foundation.html">
               <img src="images/makeup_foundation.png">
               <div class="goods-name">ファンデーション<br>　　C　　</div>
               <div class="goods-price">999円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_foundation.html">
               <img src="images/makeup_foundation.png">
               <div class="goods-name">ファンデーション<br>　　D　　</div>
               <div class="goods-price">1900円</div>
@@ -235,14 +266,14 @@
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_pressed_powder.html">
               <img src="images/baby_powder_white.png">
               <div class="goods-name">ベビーパウダー</div>
               <div class="goods-price">6000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_pressed_powder.html">
               <img src="images/makeup_loose_powder.png">
               <div class="goods-name">ルースパウダー</div>
               <div class="goods-price">3500円</div>
@@ -257,28 +288,28 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_eye_shadow.html">
               <img src="images/makeup_eyeshadow.png">
               <div class="goods-name">　アイシャドウA　</div>
               <div class="goods-price">1500円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_eye_shadow.html">
               <img src="images/makeup_eyeshadow.png">
               <div class="goods-name">　アイシャドウB　</div>
               <div class="goods-price">5000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_eye_shadow.html">
               <img src="images/makeup_eyeshadow.png">
               <div class="goods-name">　アイシャドウC　</div>
               <div class="goods-price">999円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_eye_shadow.html">
               <img src="images/makeup_eyeshadow.png">
               <div class="goods-name">　アイシャドウD　</div>
               <div class="goods-price">1900円</div>
@@ -293,28 +324,28 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_gross.html">
               <img src="images/makeup_lipgloss.png">
               <div class="goods-name">　リップグロスA　</div>
               <div class="goods-price">1500円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_gross.html">
               <img src="images/makeup_lipgloss.png">
               <div class="goods-name">　リップグロスB　</div>
               <div class="goods-price">5000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_gross.html">
               <img src="images/makeup_lipgloss.png">
               <div class="goods-name">　リップグロスC　</div>
               <div class="goods-price">999円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_gross.html">
               <img src="images/makeup_lipgloss.png">
               <div class="goods-name">　リップグロスD　</div>
               <div class="goods-price">1900円</div>
@@ -329,7 +360,7 @@
 
         <div class="goods-main">
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_suppliment2.html">
               <img src="images/suppliment.png">
               <div class="goods-name">　サプリメント　</div>
               <div class="goods-price">1800円</div>
@@ -343,28 +374,28 @@
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_hyaluronic.html">
               <img src="images/suppliment_hyaluronic.png" class="hyaluronic_png">
               <div class="goods-name">　ヒアルロン酸　</div>
               <div class="goods-price">2000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_collagen.html">
               <img src="images/suppliment_collagen.png">
               <div class="goods-name">　 コラーゲン 　</div>
               <div class="goods-price">2000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="#">
+            <a href="cosme_calcium.html">
               <img src="images/suppliment_calcium.png">
               <div class="goods-name">　 カルシウム 　</div>
               <div class="goods-price">2000円</div>
             </a>
           </div>
           <div class="goods-index">
-            <a href="cosme_hot_curler_byura.html">
+            <a href="cosme_placenta.html">
               <img src="images/suppliment_placenta.png">
               <div class="goods-name">　 プラセンタ 　</div>
               <div class="goods-price">2000円</div>
@@ -379,35 +410,35 @@
 
           <div class="goods-main">
             <div class="goods-index">
-              <a href="#">
+              <a href="cosme_eye_shadow.html">
                 <img src="images/makeup_eyeshadow.png">
                 <div class="goods-name">　アイシャドー　</div>
                 <div class="goods-price">1300円</div>
               </a>
             </div>
             <div class="goods-index">
-              <a href="#">
+              <a href="cosme_aroma_essential_oil.html">
                 <img src="images/aroma_essential_oil.png">
                 <div class="goods-name">アロマ<br>エッセンシャル<br>オイル</div>
                 <div class="goods-price">1100円</div>
               </a>
             </div>
             <div class="goods-index">
-              <a href="#">
+              <a href="cosme_biganki.html">
                 <img src="images/biganki.png">
                 <div class="goods-name">　　 美顔器 　　</div>
                 <div class="goods-price">9000円</div>
               </a>
             </div>
             <div class="goods-index">
-              <a href="#">
+              <a href="cosme_manicure.html">
                 <img src="images/makeup_manicure.png">
                 <div class="goods-name">　 マニキュア 　</div>
                 <div class="goods-price">1650円</div>
               </a>
             </div>
             <div class="goods-index">
-              <a href="#">
+              <a href="cosme_seikanzai.html">
                 <img src="images/seikanzai.png">
                 <div class="goods-name">　　 制汗剤 　　</div>
                 <div class="goods-price">1980円</div>
@@ -428,7 +459,7 @@
           <div class="navFooterColHead">このサイトについて</div>
         <ul>
             <li class="nav_first">
-              <a href="#" class="nav_a">会社概要</a>
+              <a href="company_overview.html" class="nav_a">会社概要</a>
             </li>
         </ul>
         </div>
@@ -455,13 +486,7 @@
           <div class="navFooterColHead">よくある質問</div>
         <ul>
             <li class="nav_first">
-              <a href="#" class="nav_a">お支払方法について</a>
-            </li>
-            <li>
-              <a href="#" class="nav_a">送料について</a>
-            </li>
-            <li>
-              <a href="#" class="nav_a">発送日の目安</a>
+              <a href="question.html" class="nav_a">よくある質問</a>
             </li>
         </ul>
         </div>
@@ -471,6 +496,15 @@
 
 </div>
 <!-- フッター終了 -->
+
+</div><!-- /main -->
+</div><!-- /st-content-inner -->
+</div><!-- /st-content -->
+</div><!-- /st-pusher -->
+</div><!-- /st-container -->
+<script src="classie.js"></script>
+<script src="sidebarEffects.js"></script>
+
 </body>
 </html>
 
