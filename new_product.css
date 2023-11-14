@@ -13,11 +13,11 @@
   width:200px;
 }
 
-.topic_lotion, .topic_powder, .topic_suppli{
+.topic{
   margin-top: 20px;
   margin-left: 30px;
   background-color: #ffb6c1;
-  width: 120px;
+  width: 150px;
   height: 30px;
   text-align: center;
   padding-top: 5px;
@@ -32,6 +32,30 @@
 }
 
 #content3 {
+  display: none;
+}
+
+#content4 {
+  display: none;
+}
+
+#content5 {
+  display: none;
+}
+
+#content6 {
+  display: none;
+}
+
+#content7 {
+  display: none;
+}
+
+#content8 {
+  display: none;
+}
+
+#content9 {
   display: none;
 }
 
