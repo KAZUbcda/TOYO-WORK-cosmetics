@@ -1,7 +1,7 @@
 .cosmetics_ranking_contents{
   display: flex;
-  margin-top: 30px;
-  /* margin: 30px 0 0 30px; */
+  margin: 30px 0 50px 0;
+  padding: 20px 0 50px 0;
   background-color: rgb(254, 239, 254);
 }
 
